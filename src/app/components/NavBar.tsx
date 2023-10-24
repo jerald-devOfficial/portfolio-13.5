@@ -263,9 +263,7 @@ const Navbar: FC = () => {
               whileTap={{ scale: 0.9 }}
               aria-label='Checkout my twitter profile'
             >
-              <XIcon
-                className={theme === 'light' ? 'fill-light' : 'fill-dark'}
-              />
+              <XIcon className='fill-light dark:fill-dark' />
             </motion.a>
 
             <button

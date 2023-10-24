@@ -9,6 +9,7 @@ import { useEffect, useRef } from 'react';
 import AnimatedText from '@/app/components/AnimatedText';
 import TransitionEffect from '@/app/components/TransitionEffect';
 import Skills from '../components/Skill';
+import Experience from '../components/Experience';
 
 const AnimatedNumberFramerMotion = ({ value }: { value: number }) => {
   const ref = useRef<HTMLSpanElement>(null);
@@ -149,6 +150,7 @@ export default function About() {
           </div>
 
           <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
