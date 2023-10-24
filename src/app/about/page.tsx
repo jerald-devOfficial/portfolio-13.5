@@ -10,6 +10,7 @@ import AnimatedText from '@/app/components/AnimatedText';
 import TransitionEffect from '@/app/components/TransitionEffect';
 import Skills from '../components/Skill';
 import Experience from '../components/Experience';
+import Education from '../components/Education';
 
 const AnimatedNumberFramerMotion = ({ value }: { value: number }) => {
   const ref = useRef<HTMLSpanElement>(null);
@@ -151,6 +152,7 @@ export default function About() {
 
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>
