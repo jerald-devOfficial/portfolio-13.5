@@ -5,6 +5,7 @@ import React, { FC, useState } from 'react';
 import Logo from './Logo';
 import { usePathname, useRouter } from 'next/navigation';
 import {
+  FacebookIcon,
   GithubIcon,
   LinkedInIcon,
   MoonIcon,
@@ -133,16 +134,6 @@ const Navbar: FC = () => {
           <motion.a
             target={'_blank'}
             className='w-6 mr-3'
-            href='https://twitter.com/spaueOfficial'
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label='Checkout my twitter profile'
-          >
-            <TwitterIcon />
-          </motion.a>
-          <motion.a
-            target={'_blank'}
-            className='w-6 mx-3'
             href='https://github.com/jerald-devOfficial'
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -160,7 +151,26 @@ const Navbar: FC = () => {
           >
             <LinkedInIcon />
           </motion.a>
-
+          <motion.a
+            target={'_blank'}
+            className='w-6 mx-3'
+            href='https://www.facebook.com/spaueOfficial/'
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label='Checkout my facebook profile'
+          >
+            <FacebookIcon />
+          </motion.a>
+          <motion.a
+            target={'_blank'}
+            className='w-6 mx-3'
+            href='https://twitter.com/spaueOfficial'
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label='Checkout my twitter profile'
+          >
+            <TwitterIcon />
+          </motion.a>
           <button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             className={`w-6 h-6 ease ml-3 flex items-center justify-center rounded-full p-1  
@@ -217,17 +227,7 @@ const Navbar: FC = () => {
           >
             <motion.a
               target={'_blank'}
-              className='w-6 m-1 mr-3 sm:mx-1'
-              href='https://twitter.com/spaueOfficial'
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label='Checkout my twitter profile'
-            >
-              <TwitterIcon />
-            </motion.a>
-            <motion.a
-              target={'_blank'}
-              className='w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
+              className='w-6 m-1 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1'
               href='https://github.com/jerald-devOfficial'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -244,6 +244,26 @@ const Navbar: FC = () => {
               aria-label='Checkout my linkedin profile'
             >
               <LinkedInIcon />
+            </motion.a>
+            <motion.a
+              target={'_blank'}
+              className='w-6 m-1 mx-3 sm:mx-1'
+              href='https://www.facebook.com/spaueOfficial/'
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label='Checkout my facebook profile'
+            >
+              <FacebookIcon />
+            </motion.a>
+            <motion.a
+              target={'_blank'}
+              className='w-6 m-1 mx-3 sm:mx-1'
+              href='https://twitter.com/spaueOfficial'
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label='Checkout my twitter profile'
+            >
+              <TwitterIcon />
             </motion.a>
 
             <button

@@ -4,6 +4,7 @@ import './globals.css';
 import { ThemeProvider } from './theme-provider';
 import Client from './client';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <NavBar />
           <Client>{children}</Client>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

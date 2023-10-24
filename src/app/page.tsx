@@ -5,7 +5,6 @@ import AnimatedText from './components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from './components/Icons';
 import { HireMe } from './components/HireMe';
-import lightBulb from '../../public/images/miscellaneous_icons_1.svg';
 import profilePic from '../../public/images/profile/developer.png';
 
 export default function Home() {
@@ -28,7 +27,7 @@ export default function Home() {
             </div>
             <div className='flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText
-                text='Turning vision into reality with code and design.'
+                text='Turning vision into reality with code.'
                 className='!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
               />
               <p className='my-4 text-base font-medium md:text-sm sm:!text-xs'>
@@ -39,9 +38,6 @@ export default function Home() {
               </p>
               <div className='mt-2 flex items-center self-start lg:self-center'>
                 <Link
-                  // whileHover={{
-                  //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
-                  // }}
                   href='/resume_oct_23.pdf'
                   target={'_blank'}
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
@@ -67,13 +63,6 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
-          <Image
-            className='relative h-auto w-full'
-            src={lightBulb}
-            alt='Codebucks'
-          />
-        </div>
       </article>
     </>
   );
