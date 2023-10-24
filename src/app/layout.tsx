@@ -5,6 +5,7 @@ import { ThemeProvider } from './theme-provider';
 import Client from './client';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import { ReactNode } from 'react';
 
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' });
 
@@ -14,11 +15,7 @@ export const metadata: Metadata = {
     "Explore Jerald's Next.js developer portfolio and discover the latest web app projects and software engineering articles."
 };
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <body

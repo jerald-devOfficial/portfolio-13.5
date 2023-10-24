@@ -19,7 +19,7 @@ export default function Home() {
             <div className='w-1/2 lg:hidden md:inline-block md:w-full'>
               <Image
                 src={profilePic}
-                alt='CodeBucks'
+                alt='Jerald'
                 className='h-auto w-full'
                 sizes='100vw'
                 priority
@@ -51,7 +51,7 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href='mailto:codebucks27@gmail.com'
+                  href='mailto:spaueOfficial@gmail.com'
                   className='ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base'
                 >

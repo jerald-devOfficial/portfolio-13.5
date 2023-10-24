@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   MoonIcon,
   SunIcon,
-  TwitterIcon
+  XIcon
 } from './Icons';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
@@ -169,7 +169,7 @@ const Navbar: FC = () => {
             whileTap={{ scale: 0.9 }}
             aria-label='Checkout my twitter profile'
           >
-            <TwitterIcon />
+            <XIcon />
           </motion.a>
           <button
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
@@ -263,7 +263,9 @@ const Navbar: FC = () => {
               whileTap={{ scale: 0.9 }}
               aria-label='Checkout my twitter profile'
             >
-              <TwitterIcon />
+              <XIcon
+                className={theme === 'light' ? 'fill-light' : 'fill-dark'}
+              />
             </motion.a>
 
             <button
