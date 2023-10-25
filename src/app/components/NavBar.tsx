@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import Logo from './Logo';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -84,6 +84,15 @@ const CustomMobileLink = ({
 const Navbar: FC = () => {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   const handleClick = () => {
     setIsOpen(!isOpen);

@@ -40,7 +40,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Minimal Portfolio Built with Nextjs | About Page</title>
+        <title>JB - Awesome Portfolio Built with Next.js | About Page</title>
         <meta
           name='description'
           content='Learn more about Jerald Baroro, a Next.js developer with a passion for 
@@ -67,24 +67,27 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className='font-medium '>
-                Hi, I&apos;m <strong>Jerald Baroro</strong>, a full-stack web
-                developer and a software engineer architect with a passion for
-                creating beautiful, functional, and user-centered digital
-                experiences. With 4 years of experience in the field. I am
-                always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+                Hello, I&apos;m <strong>Jerald Baroro</strong>, a dedicated
+                full-stack web developer and software engineer architect, with 4
+                years of hands-on experience in crafting beautiful, functional,
+                and user-centered digital experiences. My passion lies in
+                transforming visions into immersive online realities.
               </p>
               <p className='my-4 font-medium'>
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                In my journey, I&apos;ve honed my skills as a full-stack web
+                developer, ensuring seamless user interactions on websites and
+                various digital platforms. My expertise encompasses a deep
+                understanding of design principles, enabling me to deliver not
+                just visually appealing but highly functional solutions.
               </p>
               <p className='font-medium'>
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                I eagerly anticipate the opportunity to collaborate with you on
+                your next project. By combining my years of experience, passion
+                for innovative solutions, and commitment to user-centric design,
+                I&apos;m ready to turn your ideas into exceptional digital
+                experiences. Let&apos;s embark on this journey together, where
+                creativity meets functionality, and bring your digital visions
+                to life.
               </p>
             </div>
             <div

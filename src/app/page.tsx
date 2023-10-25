@@ -6,8 +6,9 @@ import Link from 'next/link';
 import { LinkArrow } from './components/Icons';
 import { HireMe } from './components/HireMe';
 import profilePic from '../../public/images/profile/developer.png';
+import { FC } from 'react';
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <>
       <TransitionEffect />
@@ -66,4 +67,6 @@ export default function Home() {
       </article>
     </>
   );
-}
+};
+
+export default Home;
