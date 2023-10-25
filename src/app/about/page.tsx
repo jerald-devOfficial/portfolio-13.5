@@ -1,7 +1,6 @@
 'use client';
 
 import Layout from '@/app/components/Layout';
-import Head from 'next/head';
 import Image from 'next/image';
 import profile from '../../../public/images/profile/developer-2.jpg';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
@@ -39,15 +38,6 @@ const AnimatedNumberFramerMotion = ({ value }: { value: number }) => {
 export default function About() {
   return (
     <>
-      <Head>
-        <title>JB - Awesome Portfolio Built with Next.js | About Page</title>
-        <meta
-          name='description'
-          content='Learn more about Jerald Baroro, a Next.js developer with a passion for 
-          creating innovative solutions. Discover tips for building a developer portfolio and insights on 
-          full-stack development, front-end development, and back-end development.'
-        />
-      </Head>
       <TransitionEffect />
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}

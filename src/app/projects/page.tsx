@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Head from 'next/head';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import proj1 from '../../../public/images/projects/messenger-cover-image.png';
@@ -182,14 +181,6 @@ const Project = ({ title, type, img, link, github }: ProjectProps) => {
 const Projects: FC = () => {
   return (
     <>
-      <Head>
-        <title>JB - Awesome Portfolio Built with Next.js | Projects Page</title>
-        <meta
-          name='description'
-          content='Discover the latest web app projects created by Jerald, a Next.js developer with expertise in React.js, Next.js, and full-stack development. Browse software engineering articles and tutorials for tips on creating web applications.'
-        />
-      </Head>
-
       <TransitionEffect />
       <main
         className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}

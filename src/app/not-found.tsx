@@ -1,14 +1,37 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import AnimatedText from './components/AnimatedText';
 import Layout from './components/Layout';
 import TransitionEffect from './components/TransitionEffect';
 import { Metadata } from 'next';
 
+const title = 'JB - Awesome Portfolio Built with Next.js | 404';
+
 export const metadata: Metadata = {
-  title: 'JB - Awesome Portfolio Built with Next.js | 404 Page',
+  title: title,
   description:
-    "Explore Jerald's Next.js developer portfolio and discover the latest web app projects and software engineering articles."
+    "Hey Buddy, I'm glad you visited my portfolio website! You can learn more about me. Unfortunately, you reached a page that is not found in my directory. Please track back to links that belong to my website. Thank you!",
+  twitter: {
+    images: {
+      url: 'https://www.jeraldbaroro.xyz/images/logo.png',
+      alt: "JB - Jerald Baroro's Next.js portfolio",
+      type: 'image/png',
+      width: 300,
+      height: 300
+    }
+  },
+  openGraph: {
+    title: title,
+    images: {
+      url: 'https://www.jeraldbaroro.xyz/images/logo.png',
+      alt: "JB - Jerald Baroro's Next.js portfolio",
+      type: 'image/png',
+      width: 300,
+      height: 300
+    },
+    siteName: title,
+    description:
+      "Hey Buddy, I'm glad you visited my portfolio website! You can learn more about me. Unfortunately, you reached a page that is not found in my directory. Please track back to links that belong to my website. Thank you!"
+  }
 };
 
 const NotFound = () => {

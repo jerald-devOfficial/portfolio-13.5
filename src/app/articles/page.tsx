@@ -1,14 +1,13 @@
 'use client';
 
 import { motion, useMotionValue } from 'framer-motion';
-import Head from 'next/head';
 import Image, { StaticImageData } from 'next/image';
 import blog1 from '../../../public/images/articles/getting started.png';
 import blog2 from '../../../public/images/articles/how to fully access myshoppe pos in c.png';
 import blog3 from '../../../public/images/articles/setup react with tailwindcss.png';
 
 import Link from 'next/link';
-import { useRef, MouseEvent } from 'react';
+import { useRef, MouseEvent, FC } from 'react';
 import AnimatedText from '../components/AnimatedText';
 import Layout from '../components/Layout';
 import TransitionEffect from '../components/TransitionEffect';
@@ -145,16 +144,9 @@ const FeaturedArticle = ({
   );
 };
 
-export default function Articles() {
+const Articles: FC = () => {
   return (
     <>
-      <Head>
-        <title>JB - Awesome Portfolio Built with Next.js | Articles Page</title>
-        <meta
-          name='description'
-          content="Browse through Jerald's collection of software engineering articles and  tutorials on Next.js, React.js, web development, and more. Gain valuable insights and stay up-to-date with SEO tips for building an web applications."
-        />
-      </Head>
       <TransitionEffect />
       <main
         className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
@@ -199,4 +191,6 @@ export default function Articles() {
       </main>
     </>
   );
-}
+};
+
+export default Articles;

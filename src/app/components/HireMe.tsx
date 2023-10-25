@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { CircularText } from './Icons';
 
-export const HireMe = () => {
+const HireMe = () => {
   return (
     <div
       className='fixed left-4 bottom-4 flex flex-col items-center justify-center md:right-8 sm:right-0 
@@ -24,3 +24,5 @@ dark:hover:text-light dark:hover:border-light dark:shadow-light/25 md:w-12 md:h-
     </div>
   );
 };
+
+export default HireMe;

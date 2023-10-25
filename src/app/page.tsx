@@ -4,9 +4,9 @@ import Layout from './components/Layout';
 import AnimatedText from './components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from './components/Icons';
-import { HireMe } from './components/HireMe';
 import profilePic from '../../public/images/profile/developer.png';
 import { FC } from 'react';
+import HireMe from './components/HireMe';
 
 const Home: FC = () => {
   return (
