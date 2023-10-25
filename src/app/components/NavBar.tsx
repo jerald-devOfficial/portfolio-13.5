@@ -4,16 +4,11 @@ import Link from 'next/link';
 import React, { FC, useEffect, useState } from 'react';
 import Logo from './Logo';
 import { usePathname, useRouter } from 'next/navigation';
-import {
-  FacebookIcon,
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  SunIcon,
-  XIcon
-} from './Icons';
+import { FacebookIcon, GithubIcon, LinkedInIcon, XIcon } from './Icons';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
+import SunIcon from './SunIcon';
+import MoonIcon from './MoonIcon';
 
 interface CustomProps {
   href: string;
